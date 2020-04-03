@@ -1,5 +1,18 @@
-function log(message) {
-    console.log(message);
-}
-var message = 'Hello world';
-log(message);
+"use strict";
+exports.__esModule = true;
+var like_1 = require("./like");
+var like = new like_1.Like();
+console.log(like.getNumberOfLikes());
+console.log(' ' + like.getLiked());
+like.like();
+console.log(like.getNumberOfLikes());
+console.log(' ' + like.getLiked());
+var likeToo = new like_1.Like(1);
+console.log(likeToo.getNumberOfLikes());
+console.log(' ' + likeToo.getLiked());
+likeToo.like();
+console.log(likeToo.getNumberOfLikes());
+console.log(' ' + likeToo.getLiked());
+likeToo.like();
+console.log(likeToo.getNumberOfLikes());
+console.log(' ' + likeToo.getLiked());
