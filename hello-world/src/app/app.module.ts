@@ -6,13 +6,11 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CoursesComponentComponent } from './courses-component/courses-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CourseComponent,
-    CoursesComponentComponent,
     SummaryPipe
   ],
   imports: [
